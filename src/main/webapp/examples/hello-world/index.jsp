@@ -8,7 +8,7 @@
         This App must be invoked via a signed request!<%
         return;
     }
-    String yourConsumerSecret=System.getenv("8789099144333735230");
+   // String yourConsumerSecret=System.getenv("8789099144333735230");
     String yourConsumerSecret="8789099144333735230";
     String signedRequestJson = SignedRequest.verifyAndDecodeAsJson(signedRequest[0], yourConsumerSecret);
 %>
