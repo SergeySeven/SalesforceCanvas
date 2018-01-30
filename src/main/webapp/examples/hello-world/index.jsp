@@ -2,7 +2,7 @@
 <%@ page import="java.util.Map" %>
 <%
     // Pull the signed request out of the request body and verify/decode it.
- /*   Map<String, String[]> parameters = request.getParameterMap();
+    Map<String, String[]> parameters = request.getParameterMap();
     String[] signedRequest = parameters.get("signed_request");
     if (signedRequest == null) {%>
         This App must be invoked via a signed request!<%
@@ -10,7 +10,7 @@
     }
    // String yourConsumerSecret=System.getenv("8789099144333735230");
     String yourConsumerSecret="8789099144333735230";
-    String signedRequestJson = SignedRequest.verifyAndDecodeAsJson(signedRequest[0], yourConsumerSecret);*/
+    String signedRequestJson = SignedRequest.verifyAndDecodeAsJson(signedRequest[0], yourConsumerSecret);
 %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
